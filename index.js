@@ -1,8 +1,14 @@
 const { Telegraf } = require("telegraf");
 
 // const token = process.env.TOKEN;
-const stickerID = 
-  "CAACAgIAAxkBAANjYBcLo4rUJoqtneGRxTLeZCFPiYMAAoUfAALgo4IHNJ8YRoQ-h34eBA";
+const stickerIDs = [
+  "CAACAgIAAxkBAANjYBcLo4rUJoqtneGRxTLeZCFPiYMAAoUfAALgo4IHNJ8YRoQ-h34eBA",
+  "CAACAgQAAxkBAANSYBfj1xoCx9GH7uEbz31021DzUtEAAmUAA7gpVwN4B8CGcJWBXB4E",
+  "CAACAgQAAxkBAANTYBfj196-S5J-MlEUqOpRFSpv_XAAAgwZAAKUYE4D17-tuK0LJEIeBA",
+  "CAACAgIAAxkBAANUYBfj2Pg8l6cQVwABJKnNcIvEdMBMAAIGAANARUkkS6hXpBk2Y08eBA",
+  "CAACAgEAAxkBAANVYBfj2KGyouizT8zJDzfvELQNShoAAiQDAAKZf4gC3YVtnCHpm4keBA",
+  "CAACAgEAAxkBAANWYBfj2fAyU2ORuGXkPSP5tMYiVQMAAskSAAKZf4gCTSQmbkVIttceBA",
+  ];
 const token = "1426367634:AAGVjtpE4O2YXnlx7XGa4aVsMY6__A1zJA0";
 const appname = "remgram";
 const url = "https://remgram.herokuapp.com";
@@ -27,7 +33,8 @@ bot.on("new_chat_members", (ctx) => {
     ctx.reply(text, {
       reply_to_message_id: ctx.message.message_id,
     });
-    ctx.replyWithSticker(stickerID);
+	var randomStickerID = _.sample(stickerIDs);
+    ctx.replyWithSticker(randomStickerID);
   });
 });
 
