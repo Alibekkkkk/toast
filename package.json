@@ -1,0 +1,18 @@
+{
+  "name": "animehallou",
+  "version": "1.0.0",
+  "description": "",
+  "engines":{
+    "node":"14.15.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.0.1"
+  }
+}
