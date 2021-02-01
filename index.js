@@ -34,6 +34,7 @@ bot.on("new_chat_members", (ctx) => {
       reply_to_message_id: ctx.message.message_id,
     });
 	var randomStickerID = _.sample(stickerIDs);
+	console.log(randomStickerID);
     ctx.replyWithSticker(randomStickerID);
   });
 });
