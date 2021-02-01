@@ -3,11 +3,9 @@ const { Telegraf } = require("telegraf");
 // const token = process.env.TOKEN;
 const stickerID =
   "CAACAgIAAxkBAANjYBcLo4rUJoqtneGRxTLeZCFPiYMAAoUfAALgo4IHNJ8YRoQ-h34eBA";
-const token = "СЮДА ВПИШЕШЬ СВОЙ ТОКЕН ДЛЯ ТЕЛЕГРАМ БОТА";
-// ЭТИ ПЕРЕМЕННЫЕ НУЖНЫ ДЛЯ ХЕРОКУ, РАСКОММЕНТЬ ЕСЛИ ЗАЛИВАЕШЬ ТУДА,
-// И НЕ ЗАБУДЬ РАСКОММЕНТИТЬ В САМОМ НИЗУ
-// const appname = "СЮДА ВПИШЕШЬ ИМЯ ПРИЛОЖЕНИЯ НА ХЕРОКУ, ЕСЛИ ЗАЛЬЕШЬ ТУДА";
-// const url = "https://" + appname + ".herokuapp.com";
+const token = "1426367634:AAGVjtpE4O2YXnlx7XGa4aVsMY6__A1zJA0";
+const appname = "remgram";
+const url = "https://remgram.herokuapp.com";
 const bot = new Telegraf(token);
 
 bot.on("new_chat_members", (ctx) => {
@@ -38,7 +36,7 @@ bot.on("sticker", (ctx) => console.log(ctx.message.sticker));
 
 bot.launch({
   // ЭТА СТРОЧКА НУЖНА ТОЛЬКО ЕСЛИ ЗАЛИВАЕШЬ НА ХЕРОКУ, ИНАЧЕ МОЖЕШЬ НЕ РАСКОММЕНТИРОВАТЬ
-  // webhook: { domain: url, port: process.env.PORT },
+webhook: { domain: url, port: process.env.PORT },
 });
 console.log("Started server on " + url);
 process.once("SIGINT", () => bot.stop("SIGINT"));
