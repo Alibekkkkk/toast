@@ -8,7 +8,6 @@ const stickerID = [
   "CAACAgQAAxkBAAMRYBe9YHOAb2vYdxPi4CBnfOPz0WUAAgwZAAKUYE4D17-tuK0LJEIeBA",
   "CAACAgEAAxkBAAMSYBe9YJOUIA8ZLgawVgsYE2UanwQAAiQDAAKZf4gC3YVtnCHpm4keBA",
   "CAACAgEAAxkBAAMTYBe9aMIRyYnA-eGefbnnUywQSYoAAskSAAKZf4gCTSQmbkVIttceBA",
-  
   ];
 const token = "1426367634:AAGVjtpE4O2YXnlx7XGa4aVsMY6__A1zJA0";
 const appname = "remgram";
