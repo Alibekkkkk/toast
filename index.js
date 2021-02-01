@@ -25,16 +25,17 @@ bot.on("new_chat_members", (ctx) => {
       "](tg://user?id=" +
       user.id +
       ")";
+	var randomStickerID = _.sample(stickerIDs);
+	// console.log(randomStickerID);
     var text =
       "@" +
-      (user?.username ?? fisrtLastName) +
-      ", Welcome to NU Anime Community/Nasshu Anime no Kuni e Yōkoso 🤗";
+      (user?.username ?? fisrtLastName) + 
+      ", Welcome to NU Anime Community/Nasshu Anime no Kuni e Yōkoso 🤗" +
+	  randomStickerID;
     console.log(text);
     ctx.reply(text, {
       reply_to_message_id: ctx.message.message_id,
     });
-	var randomStickerID = _.sample(stickerIDs);
-	console.log(randomStickerID);
     ctx.replyWithSticker(randomStickerID);
   });
 });
