@@ -1,13 +1,8 @@
 const { Telegraf } = require("telegraf");
 
 // const token = process.env.TOKEN;
-const stickerID = [
-  "CAACAgIAAxkBAANjYBcLo4rUJoqtneGRxTLeZCFPiYMAAoUfAALgo4IHNJ8YRoQ-h34eBA",
-  "CAACAgQAAxkBAAM4YBfSp3Jw6eXath4w_URZcwRFXWcAAo8AA4gJQAuN_fXE73Xcgx4E",
-  "CAACAgIAAxkBAAM5YBfSqCywN_PFfHZPdB79LFF9A34AAgQBAAJzZ5AL7GqcyE5znp4eBA",
-  "CAACAgIAAxkBAAM6YBfSqHLuSUdrSz2zX29JO96ALgsAAigAA3NnkAvluj0hDFIbXx4E",
-  "CAACAgQAAxkBAAM7YBfSqfxbkMtTjUoxvA4BlYIIKLYAAukGAALjp10FGUu0no0SzkkeBA",
-  ];
+const stickerID = 
+  "CAACAgIAAxkBAANjYBcLo4rUJoqtneGRxTLeZCFPiYMAAoUfAALgo4IHNJ8YRoQ-h34eBA";
 const token = "1426367634:AAGVjtpE4O2YXnlx7XGa4aVsMY6__A1zJA0";
 const appname = "remgram";
 const url = "https://remgram.herokuapp.com";
