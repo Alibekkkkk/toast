@@ -2,17 +2,11 @@ const { Telegraf } = require("telegraf");
 
 // const token = process.env.TOKEN;
 const stickerIDs = [
-  "CAACAgIAAxkBAANjYBcLo4rUJoqtneGRxTLeZCFPiYMAAoUfAALgo4IHNJ8YRoQ-h34eBA",
-  "CAACAgQAAxkBAANSYBfj1xoCx9GH7uEbz31021DzUtEAAmUAA7gpVwN4B8CGcJWBXB4E",
-  "CAACAgQAAxkBAANTYBfj196-S5J-MlEUqOpRFSpv_XAAAgwZAAKUYE4D17-tuK0LJEIeBA",
-  "CAACAgIAAxkBAANUYBfj2Pg8l6cQVwABJKnNcIvEdMBMAAIGAANARUkkS6hXpBk2Y08eBA",
-  "CAACAgEAAxkBAANVYBfj2KGyouizT8zJDzfvELQNShoAAiQDAAKZf4gC3YVtnCHpm4keBA",
-  "CAACAgEAAxkBAANWYBfj2fAyU2ORuGXkPSP5tMYiVQMAAskSAAKZf4gCTSQmbkVIttceBA",
-  "CAACAgQAAxkBAAN1YBf5x4bdApfUyWl-MRhBC-_QVDoAAgwZAAKUYE4D17-tuK0LJEIeBA",
-  "CAACAgQAAxkBAAN2YBf5yUmr3WqO3g4PslwFW7NVr1gAAmUAA7gpVwN4B8CGcJWBXB4E",
-  "CAACAgQAAxkBAAN3YBf5ymLeXgo7pIC2cOvxDANHbygAAnsJAALk59oOvpvR8ZKiOqseBA",
-  "CAACAgIAAxkBAAN4YBf5y9rxZ6TdXlx9nGCtUiAgM1EAAgECAAJkOCsBiMPDQmQz-4AeBA",
-  "CAACAgQAAxkBAAN5YBf5zGbKWLeoSwJNqSN1dNvjX1sAAsNmAALjp10FvmEoEV5DHd8eBA",
+  "CAACAgIAAxkBAAIBI2K5hbVVF8NE2YZSI4heKIuaKXgRAAIHEwACI-tgSUbJU8ti3DchKQQ",
+  "CAACAgQAAxkBAAIBJGK5hb_A861ZrNVbsOqMOIoPLA0cAAK2AwACqZEXEzZggnUhTCAEKQQ",
+  "CAACAgUAAxkBAAIBJWK5hcqOSguykPfYyiqCJNwY6M8SAAJpAgAC7j1pVbi1UKQgf-N5KQQ",
+  "CAACAgQAAxkBAAIBJmK5hdZpHhQawA69s6YspB3YBEotAAJ5AgAC5GWVB6EYMt6PcHw7KQQ",
+  "CAACAgUAAxkBAAIBJ2K5hgVCZfO5l7Pe06bPhaJKBLq3AALrBgACLXlhV_IiLMkpqv4dKQQ",
   ];
 const token = "1426367634:AAGVjtpE4O2YXnlx7XGa4aVsMY6__A1zJA0";
 const appname = "remgram";
@@ -34,7 +28,7 @@ bot.on("new_chat_members", (ctx) => {
     var text =
       "@" +
       (user?.username ?? fisrtLastName) + 
-      ", Welcome to NU Anime Community/Nasshu Anime no Kuni e Yōkoso 🤗";
+      ", Welcome to NU Anime Community/Nasshu Anime no Kuni e Yōkoso 🤗\nPlease introduce yourself (Your name, major, year of study)\nWhat are your TOP-3 titles (anime/manga)?";
     console.log(text);
     ctx.reply(text, {
       reply_to_message_id: ctx.message.message_id,
